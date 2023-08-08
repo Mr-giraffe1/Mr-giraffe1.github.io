@@ -15,13 +15,13 @@
 <meta property="og:site_name" content="小凯的博客">
 <meta property="og:description" content="JAVA笔记">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="c:\Users\www74\AppData\Roaming\Typora\typora-user-images\image-20230509161214660.png">
-<meta property="og:image" content="c:\Users\www74\AppData\Roaming\Typora\typora-user-images\image-20230509144520500.png">
+<meta property="og:image" content="http://example.com/JAVA%E8%83%8C%E8%AF%B5.assets/image-20230509161214660-1691481124812.png">
+<meta property="og:image" content="http://example.com/JAVA%E8%83%8C%E8%AF%B5.assets/image-20230509144520500.png">
 <meta property="article:published_time" content="2023-08-07T01:19:21.945Z">
-<meta property="article:modified_time" content="2023-08-07T01:50:50.322Z">
+<meta property="article:modified_time" content="2023-08-08T07:52:39.145Z">
 <meta property="article:author" content="Mr_giraffe">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="c:\Users\www74\AppData\Roaming\Typora\typora-user-images\image-20230509161214660.png">
+<meta name="twitter:image" content="http://example.com/JAVA%E8%83%8C%E8%AF%B5.assets/image-20230509161214660-1691481124812.png">
   
     <link rel="alternative" href="/atom.xml" title="小凯的博客" type="application/atom+xml">
   
@@ -256,8 +256,7 @@
 <p><strong>不同点</strong></p>
 <p>（1）接口只有定义，不能有方法的实现，java 1.8中可以定义default方法体，而抽象类可以有定义与实现，方法可在抽象类中实现。<br>（2）实现接口的关键字为implements，继承抽象类的关键字为extends。一个类可以实现多个接口，但一个类只能继承一个抽象类。所以，使用接口可以间接地实现多重继承。<br>（3）接口强调特定功能的实现，而抽象类强调所属关系。<br>（4）接口成员变量默认为public static final，必须赋初值，不能被修改；其所有的成员方法都是public、abstract的。抽象类中成员变量默认default，可在子类中被重新定义，也可被重新赋值；抽象方法被abstract修饰，不能被private、static、synchronized和native等修饰，必须以分号结尾，不带花括号。</p>
 <h2 id="Day12"><a href="#Day12" class="headerlink" title="Day12"></a>Day12</h2><h3 id="时间日期类"><a href="#时间日期类" class="headerlink" title="时间日期类"></a>时间日期类</h3><p>​	Date类，Calendar类，SimpleDateFormat类，GregorianCalendar类<br>​	Calendar为一个抽象类，要创建其对象可以使用Calendar.getInstance()方法<br>​	GregorianCalendar为Calendar的实现子类<br>​	Date类为日期类大多数方法已被弃用<br>​	SimpleDateFormat类为格式化日期类，用于格式化日期使用</p>
-<img src="C:\Users\www74\AppData\Roaming\Typora\typora-user-images\image-20230509161214660.png" alt="image-20230509161214660" style="zoom: 67%;" />
-
+<p><img src="/JAVA%E8%83%8C%E8%AF%B5.assets/image-20230509161214660-1691481124812.png" alt="image-20230509161214660"></p>
 <h2 id="Day13"><a href="#Day13" class="headerlink" title="Day13"></a>Day13</h2><h3 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h3><p>​	包含：6个接口和一个工具类<br>​		6个接口：Collection，List，Set，SortedSet，Map，SortedMap<br>​		一个工具类：Collections<br>​	List接口实现类<br>​	ArrayList	LinkedList</p>
 <h3 id="ArrayList"><a href="#ArrayList" class="headerlink" title="ArrayList"></a>ArrayList</h3><p>​	创建举例：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ArrayList&lt;Object&gt; listTest = <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;&gt;();</span><br></pre></td></tr></table></figure>
@@ -326,8 +325,7 @@
 <p>​	创建TreeMap<br>​		</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Map&lt;Object, Object&gt; treeMap= <span class="keyword">new</span> <span class="title class_">TreeMap</span>&lt;&gt;();</span><br></pre></td></tr></table></figure>
 
-<img src="C:\Users\www74\AppData\Roaming\Typora\typora-user-images\image-20230509144520500.png" alt="image-20230509144520500" style="zoom: 50%;" />
-
+<p><img src="/JAVA%E8%83%8C%E8%AF%B5.assets/image-20230509144520500.png" alt="image-20230509144520500"></p>
 <h2 id="Day14"><a href="#Day14" class="headerlink" title="Day14"></a>Day14</h2><h3 id="Collections"><a href="#Collections" class="headerlink" title="Collections"></a>Collections</h3><p>集合工具类</p>
 <p>​	对集合进行排序<br>​	排序一：<br>​	类要实现Comparable接口，重写compareTo()方法<br>​	排序二<br>​	自定义一个排序类，实现Comparator接口，实现compare方法</p>
 <h2 id="Day15"><a href="#Day15" class="headerlink" title="Day15"></a>Day15</h2><h3 id="异常的类"><a href="#异常的类" class="headerlink" title="异常的类"></a>异常的类</h3><p>​	Throwable:异常和错误的顶级父类<br>​	Error：错误类，程序本身无法处理的错误<br>​	Exception：异常类，程序可以处理的错误<br>​	RuntimeException：Exception子类，运行时异常</p>

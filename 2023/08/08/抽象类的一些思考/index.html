@@ -15,12 +15,12 @@
 <meta property="og:site_name" content="小凯的博客">
 <meta property="og:description" content="抽象类的一些思考">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="c:%5CUsers%5Cwww74%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20230808100338713.png">
+<meta property="og:image" content="http://example.com/%E6%8A%BD%E8%B1%A1%E7%B1%BB%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%9D%E8%80%83.assets/image-20230808100338713.png">
 <meta property="article:published_time" content="2023-08-08T02:58:20.882Z">
-<meta property="article:modified_time" content="2023-08-08T03:00:59.299Z">
+<meta property="article:modified_time" content="2023-08-08T07:47:04.674Z">
 <meta property="article:author" content="Mr_giraffe">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="c:%5CUsers%5Cwww74%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20230808100338713.png">
+<meta name="twitter:image" content="http://example.com/%E6%8A%BD%E8%B1%A1%E7%B1%BB%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%9D%E8%80%83.assets/image-20230808100338713.png">
   
     <link rel="alternative" href="/atom.xml" title="小凯的博客" type="application/atom+xml">
   
@@ -173,7 +173,8 @@
 <p>最后在另一个类内将子类实例化，调用方法</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">AbstractTest03</span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">AbstractTest02</span> <span class="variable">abstractTest02</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">AbstractTest02</span>();</span><br><span class="line">        abstractTest02.f4();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<p><img src="C:%5CUsers%5Cwww74%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20230808100338713.png" alt="image-20230808100338713"></p>
+<p>结果为：</p>
+<p><img src="/%E6%8A%BD%E8%B1%A1%E7%B1%BB%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%9D%E8%80%83.assets/image-20230808100338713.png" alt="image-20230808100338713"></p>
 <p>因为方法的动态绑定机制使得子类成功的调用了父类的方法。</p>
 <p>那在实际应用中如何利用或者理解这一特性呢？</p>
 <p>我的理解是，在实际应用中抽象类虽然是实例的抽象表达，但即使是抽象表达也会有具体的地方，比如人这一抽象表达中，吃饭睡觉这些特性是所有人都必须拥有的，所以这些方法若是每个子类都再重写一遍很非常的浪费时间精力，所以在定义抽象方法时将这类型的方法实现，让子类直接调用的方法即可，无需子类再重复实现。同理作为比抽象类更抽象的接口也同样适用，而且接口更强调的是特有的功能实现，所以在抽象类中写实例方法也可以看作是一种弱化版的接口调用</p>
