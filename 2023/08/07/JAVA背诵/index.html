@@ -15,13 +15,13 @@
 <meta property="og:site_name" content="小凯的博客">
 <meta property="og:description" content="JAVA笔记">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://example.com/JAVA%E8%83%8C%E8%AF%B5.assets/image-20230509161214660-1691481124812.png">
-<meta property="og:image" content="http://example.com/JAVA%E8%83%8C%E8%AF%B5.assets/image-20230509144520500.png">
+<meta property="og:image" content="http://example.com/.com//image-20230509161214660-1691481124812.png">
+<meta property="og:image" content="http://example.com/.com//image-20230509144520500.png">
 <meta property="article:published_time" content="2023-08-07T01:19:21.945Z">
 <meta property="article:modified_time" content="2023-08-08T07:52:39.145Z">
 <meta property="article:author" content="Mr_giraffe">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/JAVA%E8%83%8C%E8%AF%B5.assets/image-20230509161214660-1691481124812.png">
+<meta name="twitter:image" content="http://example.com/.com//image-20230509161214660-1691481124812.png">
   
     <link rel="alternative" href="/atom.xml" title="小凯的博客" type="application/atom+xml">
   
@@ -191,7 +191,7 @@
 <h2 id="Day6"><a href="#Day6" class="headerlink" title="Day6"></a>Day6</h2><h3 id="引用和实例的关系"><a href="#引用和实例的关系" class="headerlink" title="引用和实例的关系"></a>引用和实例的关系</h3><p>​	一个引用可以指向0个或1个实例<br>​	一个实例可以被多个引用指向</p>
 <p>​	new出来的空间存在于堆中；<br>​	声明的变量名存在于栈中；</p>
 <h3 id="值传递"><a href="#值传递" class="headerlink" title="值传递"></a>值传递</h3><p>​	类类型传递的是内存地址<br>​	基本数据类型传递的是值</p>
-<h3 id=""><a href="#" class="headerlink" title="&#x3D;&#x3D;"></a>&#x3D;&#x3D;</h3><p>​	对基本数据类型而言比较值大小；<br>​	对类对象比较的是堆内的地址</p>
+<h3 id><a href="#" class="headerlink" title="&#x3D;&#x3D;"></a>&#x3D;&#x3D;</h3><p>​	对基本数据类型而言比较值大小；<br>​	对类对象比较的是堆内的地址</p>
 <h3 id="this的作用"><a href="#this的作用" class="headerlink" title="this的作用"></a>this的作用</h3><p>​	用于区分全局变量和局部变量<br>​	在构造器的第一行调用this(成员变量)可以调用其他的构造器<br>​	在实例方法中用this.方法名   来调用其他方法  只要用于标识方法为该类的方法</p>
 <h2 id="Day7"><a href="#Day7" class="headerlink" title="Day7"></a>Day7</h2><h3 id="static"><a href="#static" class="headerlink" title="static"></a>static</h3><p>​	<em>static可修饰变量，方法，代码块</em></p>
 <p>​	<em>static所修饰的变量，方法和代码块都不依赖于对象进行调用，他们在类加载时就已经创建完毕，且同一个类中不同对象的静态变量是指向同一空间的。</em></p>
@@ -256,7 +256,7 @@
 <p><strong>不同点</strong></p>
 <p>（1）接口只有定义，不能有方法的实现，java 1.8中可以定义default方法体，而抽象类可以有定义与实现，方法可在抽象类中实现。<br>（2）实现接口的关键字为implements，继承抽象类的关键字为extends。一个类可以实现多个接口，但一个类只能继承一个抽象类。所以，使用接口可以间接地实现多重继承。<br>（3）接口强调特定功能的实现，而抽象类强调所属关系。<br>（4）接口成员变量默认为public static final，必须赋初值，不能被修改；其所有的成员方法都是public、abstract的。抽象类中成员变量默认default，可在子类中被重新定义，也可被重新赋值；抽象方法被abstract修饰，不能被private、static、synchronized和native等修饰，必须以分号结尾，不带花括号。</p>
 <h2 id="Day12"><a href="#Day12" class="headerlink" title="Day12"></a>Day12</h2><h3 id="时间日期类"><a href="#时间日期类" class="headerlink" title="时间日期类"></a>时间日期类</h3><p>​	Date类，Calendar类，SimpleDateFormat类，GregorianCalendar类<br>​	Calendar为一个抽象类，要创建其对象可以使用Calendar.getInstance()方法<br>​	GregorianCalendar为Calendar的实现子类<br>​	Date类为日期类大多数方法已被弃用<br>​	SimpleDateFormat类为格式化日期类，用于格式化日期使用</p>
-<p><img src="/JAVA%E8%83%8C%E8%AF%B5.assets/image-20230509161214660-1691481124812.png" alt="image-20230509161214660"></p>
+<p><img src="/.com//image-20230509161214660-1691481124812.png" alt="image-20230509161214660"></p>
 <h2 id="Day13"><a href="#Day13" class="headerlink" title="Day13"></a>Day13</h2><h3 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h3><p>​	包含：6个接口和一个工具类<br>​		6个接口：Collection，List，Set，SortedSet，Map，SortedMap<br>​		一个工具类：Collections<br>​	List接口实现类<br>​	ArrayList	LinkedList</p>
 <h3 id="ArrayList"><a href="#ArrayList" class="headerlink" title="ArrayList"></a>ArrayList</h3><p>​	创建举例：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ArrayList&lt;Object&gt; listTest = <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;&gt;();</span><br></pre></td></tr></table></figure>
@@ -303,7 +303,7 @@
 <h3 id="Set"><a href="#Set" class="headerlink" title="Set"></a>Set</h3><p>​	继承于Collection接口</p>
 <h4 id="实现类："><a href="#实现类：" class="headerlink" title="实现类："></a>实现类：</h4><p>​	HashSet：底层为HashSet表存储<br>​	特点：无序，无重复值，可以存放null，线程不安全<br>​	无法使用普通for循环，因为他是无序的</p>
 <p>​	SortedSet：是Set的子接口<br>​	实现类TreeSet：底层为普通的顺序链表<br>​	特点：不能添加null，无重复值，无序但按数字大小和字母顺序添加</p>
-<p>​	创建HashSet集合<br>​	Set<Object> set &#x3D; new HashSet<Object>;<br>​	添加元素<br>​	set.add(object)</p>
+<p>​	创建HashSet集合<br>​	Set<Object> set &#x3D; new HashSet<Object>;<br>​	添加元素<br>​	set.add(object)</Object></Object></p>
 <p>​	创建SortedSet集合<br>​	TreeSet不能加入类类型，需要重写compareTo方法来确定排序方式<br>​	SortedSet set &#x3D; new TreeSet接口回调式创建</p>
 <h3 id="Map"><a href="#Map" class="headerlink" title="Map"></a>Map</h3><p>​	存储键值对(key,value),映射关系</p>
 <p>​	实现类:<br>​	HashMap<br>​	特点：覆盖重复的key值，value可以重复<br>​	TreeMap<br>​	特点：不能有null，覆盖重复的key值，value可以重复</p>
@@ -325,7 +325,7 @@
 <p>​	创建TreeMap<br>​		</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Map&lt;Object, Object&gt; treeMap= <span class="keyword">new</span> <span class="title class_">TreeMap</span>&lt;&gt;();</span><br></pre></td></tr></table></figure>
 
-<p><img src="/JAVA%E8%83%8C%E8%AF%B5.assets/image-20230509144520500.png" alt="image-20230509144520500"></p>
+<p><img src="/.com//image-20230509144520500.png" alt="image-20230509144520500"></p>
 <h2 id="Day14"><a href="#Day14" class="headerlink" title="Day14"></a>Day14</h2><h3 id="Collections"><a href="#Collections" class="headerlink" title="Collections"></a>Collections</h3><p>集合工具类</p>
 <p>​	对集合进行排序<br>​	排序一：<br>​	类要实现Comparable接口，重写compareTo()方法<br>​	排序二<br>​	自定义一个排序类，实现Comparator接口，实现compare方法</p>
 <h2 id="Day15"><a href="#Day15" class="headerlink" title="Day15"></a>Day15</h2><h3 id="异常的类"><a href="#异常的类" class="headerlink" title="异常的类"></a>异常的类</h3><p>​	Throwable:异常和错误的顶级父类<br>​	Error：错误类，程序本身无法处理的错误<br>​	Exception：异常类，程序可以处理的错误<br>​	RuntimeException：Exception子类，运行时异常</p>

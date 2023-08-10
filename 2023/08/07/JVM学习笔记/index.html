@@ -15,16 +15,16 @@
 <meta property="og:site_name" content="小凯的博客">
 <meta property="og:description" content="JVM学习笔记">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="c:\Users\www74\AppData\Roaming\Typora\typora-user-images\image-20230505102844434.png">
-<meta property="og:image" content="c:\Users\www74\AppData\Roaming\Typora\typora-user-images\image-20230505103337680.png">
-<meta property="og:image" content="c:\Users\www74\AppData\Roaming\Typora\typora-user-images\image-20230506134238513.png">
-<meta property="og:image" content="c:\Users\www74\AppData\Roaming\Typora\typora-user-images\image-20230515164929963.png">
-<meta property="og:image" content="c:\Users\www74\AppData\Roaming\Typora\typora-user-images\image-20230515165119694.png">
+<meta property="og:image" content="http://example.com/.com//Users/www74/AppData/Roaming/Typora/typora-user-images/image-20230505102844434.png">
+<meta property="og:image" content="http://example.com/.com//Users/www74/AppData/Roaming/Typora/typora-user-images/image-20230505103337680.png">
+<meta property="og:image" content="http://example.com/.com//Users/www74/AppData/Roaming/Typora/typora-user-images/image-20230506134238513.png">
+<meta property="og:image" content="http://example.com/.com//Users/www74/AppData/Roaming/Typora/typora-user-images/image-20230515164929963.png">
+<meta property="og:image" content="http://example.com/.com//Users/www74/AppData/Roaming/Typora/typora-user-images/image-20230515165119694.png">
 <meta property="article:published_time" content="2023-08-07T01:19:48.429Z">
 <meta property="article:modified_time" content="2023-08-07T01:51:09.661Z">
 <meta property="article:author" content="Mr_giraffe">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="c:\Users\www74\AppData\Roaming\Typora\typora-user-images\image-20230505102844434.png">
+<meta name="twitter:image" content="http://example.com/.com//Users/www74/AppData/Roaming/Typora/typora-user-images/image-20230505102844434.png">
   
     <link rel="alternative" href="/atom.xml" title="小凯的博客" type="application/atom+xml">
   
@@ -186,7 +186,7 @@
 <p>jstack 进程号  可直接找到到出问题的进程  然后看进程的死锁情况</p>
 <p>虚拟机栈内存划分   -Xss    不</p>
 <h2 id="1-内存结构"><a href="#1-内存结构" class="headerlink" title="1.内存结构"></a>1.内存结构</h2><h3 id="程序计数器-Program-Counter-Register"><a href="#程序计数器-Program-Counter-Register" class="headerlink" title="程序计数器(Program Counter Register)"></a>程序计数器(Program Counter Register)</h3><p>所在位置如图：</p>
-<img src="C:\Users\www74\AppData\Roaming\Typora\typora-user-images\image-20230505102844434.png" alt="image-20230505102844434" style="zoom: 50%;" />
+<img src="/.com//Users\www74\AppData\Roaming\Typora\typora-user-images\image-20230505102844434.png" alt="image-20230505102844434" style="zoom: 50%;">
 
 <p>Java代码的执行流程</p>
 <p>首先将Java源码转化为二进制字节码和jvm指令</p>
@@ -197,7 +197,7 @@
 <p>程序计数器特点：</p>
 <p>​	是线程私有的（与线程绑定）</p>
 <p>​	不会存在内存溢出</p>
-<p><img src="C:\Users\www74\AppData\Roaming\Typora\typora-user-images\image-20230505103337680.png" alt="image-20230505103337680"></p>
+<p><img src="/.com//Users\www74\AppData\Roaming\Typora\typora-user-images\image-20230505103337680.png" alt="image-20230505103337680"></p>
 <h3 id="虚拟机栈"><a href="#虚拟机栈" class="headerlink" title="虚拟机栈"></a>虚拟机栈</h3><p>虚拟机栈：线程运行需要的内存空间，由多个栈帧(Frame)组成</p>
 <p>栈帧：每个方法运行时需要的内存（包含方法所具有的参数，局部变量，返回地址）</p>
 <p>每个线程只能有一个活动栈帧，对应着当前正在执行的方法</p>
@@ -215,7 +215,7 @@
 <p>jconsole工具</p>
 <p>​	图形界面的，多功能的检测工具，可以连续检测</p>
 <p>jvisualvm工具 </p>
-<h2 id="方法区"><a href="#方法区" class="headerlink" title="方法区"></a>方法区</h2><img src="C:\Users\www74\AppData\Roaming\Typora\typora-user-images\image-20230506134238513.png" alt="image-20230506134238513" style="zoom: 80%;" />
+<h2 id="方法区"><a href="#方法区" class="headerlink" title="方法区"></a>方法区</h2><img src="/.com//Users\www74\AppData\Roaming\Typora\typora-user-images\image-20230506134238513.png" alt="image-20230506134238513" style="zoom: 80%;">
 
 <p>方法区内存溢出	outofMemoryError</p>
 <p>1.8   前永久代     1.8后为元空间</p>
@@ -235,12 +235,12 @@
 <p>编译器优化：字符串常量做运算时，编译器自动给运算，并返回结果</p>
 <p>动态拼接的串都在堆中不会放入常量池</p>
 <p>intern()方法可以将字符串对象尝试放入串池，并返回池中的对象</p>
-<h2 id="直接内存"><a href="#直接内存" class="headerlink" title="直接内存"></a>直接内存</h2><img src="C:\Users\www74\AppData\Roaming\Typora\typora-user-images\image-20230515164929963.png" alt="image-20230515164929963" style="zoom:67%;" />
+<h2 id="直接内存"><a href="#直接内存" class="headerlink" title="直接内存"></a>直接内存</h2><img src="/.com//Users\www74\AppData\Roaming\Typora\typora-user-images\image-20230515164929963.png" alt="image-20230515164929963" style="zoom:67%;">
 
 <p>调用direct buffer</p>
 <p>directMemory不受java垃圾回收处理,由一个unsafe对象释放</p>
 <p>byteBuffer.allocateDirect()</p>
-<img src="C:\Users\www74\AppData\Roaming\Typora\typora-user-images\image-20230515165119694.png" alt="image-20230515165119694" style="zoom:67%;" />
+<img src="/.com//Users\www74\AppData\Roaming\Typora\typora-user-images\image-20230515165119694.png" alt="image-20230515165119694" style="zoom:67%;">
 
 <p>使用了Unsafe对象完成直接内存的分配回收，并且回收需要主动调用freeMemory方法ByteBuffer 的实现类内部，使用了Cleaner(虚引用）来监测ByteBuffer对象，ByteBuffer对象被垃圾回收，那么就会由ReferenceHandler线程通过Cleaner的clean方法调用freeMemory来释放直接内存</p>
 <p>垃圾回收</p>
